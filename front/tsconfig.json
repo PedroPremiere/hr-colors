@@ -18,43 +18,45 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/Atoms/*": [
+        "src/components/Atoms/*"
+      ],
+      "@/Molecules/*": [
+        "src/components/Molecules/*"
+      ],
+      "@/Organisms/*": [
+        "src/components/Organisms/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/pages/*": [
+        "src/pages/*"
+      ],
+      "@/layouts/*": [
+        "src/layouts/*"
+      ],
+      "@/http/*": [
+        "src/http/*"
+      ],
+      "@/utils/*": [
+        "src/utils/*"
+      ],
+      "@/config/*": [
+        "src/config/*"
+      ],
+      "@/hooks/*": [
+        "src/hooks/*"
+      ],
+      "@/types/*": [
+        "src/types/*"
+      ]
+    }
   },
-  "paths": {
-    "@/Atoms/*": [
-      "src/components/Atoms/*"
-    ],
-    "@/Molecules/*": [
-      "src/components/Molecules/*"
-    ],
-    "@/Organisms/*": [
-      "src/components/Organisms/*"
-    ],
-    "@/components/*": [
-      "src/components/*"
-    ],
-    "@/pages/*": [
-      "src/pages/*"
-    ],
-    "@/layouts/*": [
-      "src/layouts/*"
-    ],
-    "@/http/*": [
-      "src/http/*"
-    ],
-    "@/utils/*": [
-      "src/utils/*"
-    ],
-    "@/config/*": [
-      "src/config/*"
-    ],
-    "@/hooks/*": [
-      "src/hooks/*"
-    ],
-    "@/types/*": [
-      "src/types/*"
-    ]
-  },
+
   "include": [
     "src"
   ]
